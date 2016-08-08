@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>To Do App</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="home-tasks">
+        <div id="home">
+          <h1>Home Tasks</h1>
+          <label for="task">Enter Your Task Description:</label>
+          <input type="text" name="task" id="task">
+          <label for="priority">Enter Priority:</label>
+          <select class="" name="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <label for="assignment">Assigned To (optional):</label>
+          <input type="text" name="assignment" id="assignment">
+          <button type="submit" name="button" id="home-submit">Submit</button>
+        </div>
+      </form>
+      <form class="work-tasks">
+        <div id="work">
+          <h1>Work Tasks</h1>
+          <label for="task">Enter Your Task Description:</label>
+          <input type="text" name="task" id="task">
+          <label for="dueDate">Enter Due Date:</label>
+          <input type="date" name="dueDate" id="dueDate">
+          <label for="priority">Enter Priority:</label>
+          <select class="" name="priority">
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
+          </select>
+          <label for="assignment">Assigned To (required):</label>
+          <input type="text" name="assignment" id="assignment">
+          <button type="submit" name="button" id="work-submit">Submit</button>
+        </div>
+      </form>
+      <form class="hobby-tasks">
+        <div id="hobby">
+          <h1>Hobby Tasks</h1>
+          <label for="task">Enter Your Task Description:</label>
+          <input type="text" name="task" id="task">
+          <button type="submit" name="button" id="hobby-submit">Submit Task</button>
+        </div>
+      </form>
+    </div>
+    <div class="display-tasks">
+      <ul id="list-tasks">
+
+      </ul>
+
+    </div>
+
+  </body>
+</html>
