@@ -7,20 +7,20 @@ var tasks = [];
 
 $(document).ready(function(){
   var tasks = [];
-  $('#home-tasks').submit(function(event){
+  $('.home-tasks').submit(function(event){
     event.preventDefault();
     console.log("made it this far");
     var description = $("#task").val();
     $("#task").val("");
     var priority = $('#priority').val();
     $('#priority').val("");
-    // var assignedTo = $('#assignment').val();
-    // $('#assignment').val("");
+    var assignedTo = $('#assignment').val();
+    $('#assignment').val("");
     console.log(description);
     console.log(priority);
-    tasks.push(new ToDoList.HomeTask(description, priority));
+    tasks.push(new ToDoList.HomeTask(description, priority, assignedTo));
     tasks.forEach(function(task) {
-      $('#list-tasks').append("<li> Home Task: " + task.description + "Priority: " + task.priority + "</li>");
+      $('#list-tasks').append("<li> Home Task: " + task.description + " Priority: " + task.priority + " Assigned To:" + task.assignedTo + "</li>");
     });
   });
 });
